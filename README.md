@@ -19,12 +19,12 @@ Bradlees is a growing digital business that values long-term customer relationsh
 
 This project was initiated to help Bradlees develop a data-driven customer retention strategy. By analyzing historical customer behavior and applying machine learning models, with a focus on Recall and retention cost optimization, the project aims to:
 
-- Identify high-risk churn customers
-- Support targeted and cost-efficient retention efforts
-- Minimize revenue loss and improve marketing effectiveness
-- Provide actionable insights to enhance long-term profitability
+- Identify high-risk churn customers;
+- Support targeted and cost-efficient retention efforts;
+- Minimize revenue loss and improve marketing effectiveness;
+- Provide actionable insights to enhance long-term profitability.
 
-Through this approach, Bradlees can shift from reactive to proactive engagement, strengthen customer loyalty, and make smarter, data-driven business decisions
+Through this approach, Bradlees can shift from reactive to proactive engagement, strengthen customer loyalty, and make smarter, data-driven business decisions.
 
 ## Technologies Used:
 This project leverages a variety of Python-based tools and libraries to perform data preprocessing, modeling, evaluation, and interpretation:
@@ -51,12 +51,12 @@ Based on the results of EDA and RF analysis, we segmented customers into several
 
 ![Segment](Images/Segment.jpg)
 
-We conducted three experiments:
+Furthermore, we conducted three experiments:
 1. Baseline model - the initial model with only basic preprocessing such as handling duplicates and missing values;
 2. Feature engineering model - a model improved through insights gained from exploratory data analysis (EDA);
 3. Final model -  a simplified model using only the most important variables influencing churn.
 
-Based on the comparison of several machine learning models, we selected LightGBM (LGBM) with Random Over Sampling Technique (ROS) as the final model due to its highest accuracy in churn prediction. The comparison of LGBM performance across these three experiments is presented below:
+After that, based on the comparison of several machine learning models, we selected LightGBM (LGBM) with Random Over Sampling Technique (ROS) as the final model due to its highest accuracy in churn prediction. The comparison of LGBM performance across these three experiments is presented below:
 
 ![LGBM](Images/LGBM.jpg)
 
@@ -67,6 +67,8 @@ Based on the LGBM (LightGBM) analysis, there are only 12 features that influence
 The SHAP analysis for the selected LGBM model is presented as follows:
 
 ![SHAP](Images/SHAP.jpg)
+
+Several interpretations of SHAP:
 
 - Tenure: Customers with shorter tenure (red) are more likely to churn.
 - Customers who have complained (blue) show higher churn risk.
